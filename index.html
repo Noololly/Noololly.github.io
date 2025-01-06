@@ -15,39 +15,55 @@
       		display: flex;
       		align-items: center;
       		margin-top: 20;
+          font-family: 'Corbel';
       	}
     	.heading {
     		color: #ec9df5;
     		font-size: 32px;
-    		margin: 0;
+        margin: 0;
     	}
-    	.image {
+    	.pfp_image {
     		vertical-align: left;
-    		height: 50px;
     		margin-left: 20px;
     		margin-right: 25px;
+        margin-top: 20px;
     	}
+
+      @font-face {
+          font-family: 'Corbel'
+          src: url(corbel.ttf);
+        }
 
     	/* Body CSS */
     	.body_container {
+        display: grid;
     		margin-top: 50px;
     		margin-left: 50px;
     		color: white;
     		font-size: 20px;
+        font-family: 'Corbel';
     	}
+      .project_image {
+        vertical-align: left;
+        margin-left: 20px;
+        margin-right: 25px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+      }
 
     </style>
-        <div class="heading_container">
-    	<img class="image" src="pfp.jpg" alt="Noololly's profile picture"/>
-    	<p class="heading">Welcome to Noololly's site</p> 
-    </div>
+      <div class="heading_container">
+    	   <img class="pfp_image" src="pfp.jpg" alt="Noololly's profile picture" height="50px" />
+    	   <p class="heading">Welcome to Noololly's site</p> 
+      </div>
   </head>
   <body>
   	<div class="body_container">
   		<span style="white-space: pre-line">Hello! Welcome to my website. I have no clue what you are doing here, unless I have given you my URL for some reason or another.
-  			All are welcome here, so feel free to make yourself comfortable in my 2 webpages
+  		All are welcome here, so feel free to make yourself comfortable in my 2 webpages
   		</span>
-
+      <img class="project_image" src="uno_card.png" alt="Image of an Uno card" height="250px">
+      <a href="https://github.com/Noololly/uno/">This is the Uno project I made</a>
   	</div>
   </body>
 </html>
