@@ -1,32 +1,32 @@
 <!DOCTYPE html>
-<html>
-  <title>Welcome to Noololly's site</title>
-  <head>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
     <style>
     	body {
       	height: 100%;
-      	padding: 0;
+      	padding: 0 70px 0 0;
       	margin: 0;
-      	color: #ec9df5;
-      	background-color: black;
+      	color: #cba6f7;
+      	background-color: #11111b;
       	}
       	/* Heading CSS */
       	.heading_container {
       		display: flex;
       		align-items: center;
       		margin-top: 20px;
-          font-family: 'Corbel';
+          font-family: 'Corbel',serif;
       	}
     	.heading {
-    		color: #ec9df5;
+    		color: #cba6f7;
     		font-size: 32px;
         margin: 0;
     	}
     	.pfp_image {
-    		vertical-align: left;
     		margin-left: 20px;
     		margin-right: 25px;
-        margin-top: 20px;
+            margin-top: 10px;
+            border-radius: 40%;
     	}
 
       @font-face {
@@ -39,32 +39,73 @@
         display: grid;
     		margin-top: 50px;
     		margin-left: 50px;
-    		color: white;
+    		color: #eff1f5;
     		font-size: 20px;
-        font-family: 'Corbel';
+        font-family: 'Corbel','serif';
     	}
       .project_image {
-        vertical-align: left;
-        margin-left: 20px;
-        margin-right: 25px;
-        margin-top: 20px;
-        margin-bottom: 25px;
-        border-radius: 10%;
+          margin: 20px 25px 25px 20px;
+          border-radius: 10%;
       }
+
+        .social_links {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 10px 10px;
+            font-size: 20px;
+        }
+        .social_links a {
+            margin: 0 10px;
+            font-size: 24px;
+            text-decoration: none;
+        }
 
     </style>
       <div class="heading_container">
     	   <img class="pfp_image" src="pfp.jpg" alt="Noololly's profile picture" height="50px" />
     	   <p class="heading">Welcome to Noololly's site</p> 
       </div>
+      <title>Welcome to Noololly's site!</title>
   </head>
   <body>
   	<div class="body_container">
   		<span style="white-space: pre-line">Hello! Welcome to my website. I have no clue what you are doing here, unless I have given you my URL for some reason or another.
   		All are welcome here, so feel free to make yourself comfortable in my 2 webpages
   		</span>
-      <img class="project_image" src="uno_card.png" alt="Image of an Uno card" height="250px">
+      <img class="project_image" src="uno_card.png" alt="Image of an Uno card" height="229">
       <a href="https://github.com/Noololly/uno/">This is the Uno project I made</a>
   	</div>
+    <footer style="
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px 10px;
+    font-size: 20px">
+        <a href="https://ctp-webr.ing/noololly/previous" style="margin: 0 10px; font-size: 24px; text-decoration: none;">←</a>
+        <a href="https://ctp-webr.ing/" style="margin: 0 10px;">
+            <img src="catppuccin.png" alt="Catppuccin logo" height="50" style="border-radius: 50%;">
+        </a>
+        <a href="https://ctp-webr.ing/noololly/next" style="margin: 0 10px; font-size: 24px; text-decoration: none;">→</a>
+
+        <div class="social_links">
+            <a href="https://bsky.app/profile/noololly.studio">
+                <img src="Bluesky_Logo.svg" height="20" alt="Bluesky logo">
+            </a>
+            <a href="https://mastodonapp.uk/@noololly">
+                <img src="Mastodon.svg" height="20" alt="Mastodon logo">
+            </a>
+            <a href=https://www.linkedin.com/in/olly-de-georgio-158608288/">
+                <img src="LinkedIn_Logo.png" height="20" alt="LinkedIn logo">
+            </a>
+        </div>
+
+    </footer>
+
   </body>
 </html>
